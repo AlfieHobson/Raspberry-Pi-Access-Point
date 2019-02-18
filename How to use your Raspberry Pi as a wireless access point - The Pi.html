@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/ -->
+<html class=" js " lang="en-US" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Google Tag Manager -->
+<script type="text/javascript" async="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/analytics.js.download"></script><script src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/1706392859389035" async=""></script><script async="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/fbevents.js.download"></script><script async="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/gtm.js.download"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MZPD65K');</script>
+<!-- End Google Tag Manager -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://thepi.io/xmlrpc.php">
+<title>How to use your Raspberry Pi as a wireless access point - The Pi</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v7.5.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to use your Raspberry Pi as a wireless access point - The Pi">
+<meta property="og:description" content="The Raspberry Pi can do a lot, especially now that the new Raspberry Pi comes with wireless capabilities already on board. It can take the place...">
+<meta property="og:url" content="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/">
+<meta property="og:site_name" content="The Pi">
+<meta property="article:publisher" content="https://www.facebook.com/ThePiIO/">
+<meta property="article:tag" content="router">
+<meta property="article:tag" content="Wi-Fi">
+<meta property="article:tag" content="wireless access point">
+<meta property="article:section" content="Tutorials">
+<meta property="article:published_time" content="2018-09-19T10:00:59+00:00">
+<meta property="article:modified_time" content="2018-09-19T16:31:48+00:00">
+<meta property="og:updated_time" content="2018-09-19T16:31:48+00:00">
+<meta property="og:image" content="https://thepi.io/wp-content/uploads/2017/03/raspberry-pi-logo.png">
+<meta property="og:image:secure_url" content="https://thepi.io/wp-content/uploads/2017/03/raspberry-pi-logo.png">
+<meta property="og:image:width" content="500">
+<meta property="og:image:height" content="250">
+<meta property="og:image:alt" content="Raspberry Pi">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="The Raspberry Pi can do a lot, especially now that the new Raspberry Pi comes with wireless capabilities already on board. It can take the place...">
+<meta name="twitter:title" content="How to use your Raspberry Pi as a wireless access point - The Pi">
+<meta name="twitter:image" content="https://thepi.io/wp-content/uploads/2017/03/raspberry-pi-logo.png">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="amphtml" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/amp/"><link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="The Pi » Feed" href="https://thepi.io/feed/">
+<link rel="alternate" type="application/rss+xml" title="The Pi » Comments Feed" href="https://thepi.io/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="The Pi » How to use your Raspberry Pi as a wireless access point Comments Feed" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thepi.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="./How to use your Raspberry Pi as a wireless access point - The Pi_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="mh-style-css" href="./How to use your Raspberry Pi as a wireless access point - The Pi_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="mh-font-awesome-css" href="./How to use your Raspberry Pi as a wireless access point - The Pi_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mh-google-fonts-css" href="./How to use your Raspberry Pi as a wireless access point - The Pi_files/css" type="text/css" media="all">
+<script type="text/javascript" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/jquery.js.download"></script>
+<script type="text/javascript" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/jquery-migrate.min.js.download"></script>
+<script type="text/javascript" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/scripts.js.download"></script>
+<link rel="https://api.w.org/" href="https://thepi.io/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thepi.io/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thepi.io/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.9">
+<link rel="shortlink" href="https://thepi.io/?p=211">
+<link rel="alternate" type="application/json+oembed" href="https://thepi.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthepi.io%2Fhow-to-use-your-raspberry-pi-as-a-wireless-access-point%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://thepi.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthepi.io%2Fhow-to-use-your-raspberry-pi-as-a-wireless-access-point%2F&amp;format=xml">
+	<style type="text/css">
+    	    		.social-nav a:hover, .logo-title, .entry-content a, a:hover, .entry-meta .entry-meta-author, .entry-meta a, .comment-info, blockquote, .pagination a:hover .pagelink { color: #c7053d; }
+			.main-nav li:hover, .slicknav_menu, .ticker-title, .breadcrumb a, .breadcrumb .bc-text, .button span, .widget-title span, input[type=submit], table th, .comment-section-title .comment-count, #cancel-comment-reply-link:hover, .pagination .current, .pagination .pagelink { background: #c7053d; }
+			blockquote, input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover, input[type=url]:hover, textarea:hover { border-color: #c7053d; }
+    	    				.widget-title, .pagination a.page-numbers:hover, .dots:hover, .pagination a:hover .pagelink, .comment-section-title { background: #eeeeee; }
+			.commentlist .depth-1, .commentlist .bypostauthor .avatar { border-color: #eeeeee; }
+    	    	    	    	    		</style>
+    <!--[if lt IE 9]>
+<script src="https://thepi.io/wp-content/themes/mh_newsdesk/js/css3-mediaqueries.js"></script>
+<![endif]-->
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #eeeeee; }
+</style>
+		<style type="text/css" id="wp-custom-css">
+			.adsense {
+	display: block;
+	margin: 0 auto;
+	max-width: 300px;
+}		</style>
+	<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1706392859389035'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1706392859389035&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+</head>
+<body class="post-template-default single single-post postid-211 single-format-standard custom-background mh-right-sb mh-loop-layout2" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZPD65K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<div class="header-top">
+		<div class="wrapper-inner clearfix">
+										<nav class="social-nav clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+					<div class="menu-social-container"><ul id="menu-social" class="menu"><li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30"><a href="https://www.facebook.com/The-Pi-379538715735293/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-mh-social fa-stack-1x"></i></span><span class="screen-reader-text">Facebook</span></a></li>
+</ul></div>				</nav>
+					</div>
+	</div>
+<div id="mh-wrapper">
+<header class="mh-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+	<div class="header-wrap clearfix">
+				<div class="mh-col mh-1-3 header-logo">
+			<a href="https://thepi.io/" title="The Pi" rel="home">
+<div class="logo-wrap" role="banner">
+<img src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/logo.png" height="100" width="169" alt="The Pi">
+</div>
+</a>
+		</div>
+		<aside id="custom_html-6" class="widget_text mh-col mh-2-3 widget_custom_html"><div class="widget_text header-ad"><div class="textwidget custom-html-widget"><script async="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/f.txt"></script>
+<!-- Responsive -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7234786419871369" data-ad-slot="4320561930" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div></aside>	</div>
+	<div class="header-menu clearfix"><div class="slicknav_menu"><a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt">MENU</span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><nav class="slicknav_nav slicknav_hidden" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" style="display: none;" aria-hidden="true" role="menu">
+			<div class="menu-navigation-container"><ul class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-184"><a href="https://thepi.io/" role="menuitem">Home</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-26"><a href="https://thepi.io/category/tutorials/" role="menuitem">Tutorials</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185"><a href="https://thepi.io/what-is-a-raspberry-pi/" role="menuitem">What is a Raspberry Pi?</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="https://thepi.io/contact-us/" role="menuitem">Contact Us</a></li>
+</ul></div>		</nav></div>
+		<nav class="main-nav clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+			<div class="menu-navigation-container"><ul id="menu-navigation" class="menu"><li id="menu-item-184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-184"><a href="https://thepi.io/">Home</a></li>
+<li id="menu-item-26" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-26"><a href="https://thepi.io/category/tutorials/">Tutorials</a></li>
+<li id="menu-item-185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185"><a href="https://thepi.io/what-is-a-raspberry-pi/">What is a Raspberry Pi?</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="https://thepi.io/contact-us/">Contact Us</a></li>
+</ul></div>		</nav>
+		<div class="header-sub clearfix">
+						<aside class="mh-col mh-1-3 header-search">
+				<form role="search" method="get" class="search-form" action="https://thepi.io/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form>			</aside>
+		</div>
+	</div>
+</header>
+<div class="mh-section mh-group">
+	<div id="main-content" class="mh-content" role="main" itemprop="mainContentOfPage"><nav class="breadcrumb"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://thepi.io/" itemprop="url" class="bc-home"><span itemprop="title">Home</span></a></span> <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://thepi.io/category/tutorials/" itemprop="url"><span itemprop="title">Tutorials</span></a></span></nav>
+<article id="post-211" class="post-211 post type-post status-publish format-standard has-post-thumbnail hentry category-tutorials tag-router tag-wi-fi tag-wireless-access-point">
+	<header class="entry-header clearfix">
+		<h1 class="entry-title">
+			How to use your Raspberry Pi as a wireless access point		</h1><div class="entry-tags clearfix"><span>TOPICS:</span><a href="https://thepi.io/tag/router/" rel="tag">router</a><a href="https://thepi.io/tag/wi-fi/" rel="tag">Wi-Fi</a><a href="https://thepi.io/tag/wireless-access-point/" rel="tag">wireless access point</a></div>	</header>
+<div class="entry-thumbnail">
+<img width="500" height="250" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/raspberry-pi-logo.png" class="attachment-content-single size-content-single wp-post-image" alt="How to use your Raspberry Pi as a wireless access point" srcset="https://thepi.io/wp-content/uploads/2017/03/raspberry-pi-logo.png 500w, https://thepi.io/wp-content/uploads/2017/03/raspberry-pi-logo-300x150.png 300w, https://thepi.io/wp-content/uploads/2017/03/raspberry-pi-logo-180x90.png 180w, https://thepi.io/wp-content/uploads/2017/03/raspberry-pi-logo-260x130.png 260w, https://thepi.io/wp-content/uploads/2017/03/raspberry-pi-logo-120x60.png 120w" sizes="(max-width: 500px) 100vw, 500px"></div>
+<p class="entry-meta">
+<span class="entry-meta-author vcard author">Posted By: <a class="fn" href="https://thepi.io/author/stephen/">Stephen Lovely</a></span>
+</p>
+	<div class="entry-content clearfix">
+		<p>The Raspberry Pi can do a lot, especially now that the new&nbsp;Raspberry Pi comes with wireless capabilities already on board. It can take the place of a ton of different (and more expensive) devices – including a router! If you turn your Raspberry Pi into a wireless access point, you can make it act as a router. It’s not the most powerful thing in the world, but it does work, and the project is a lot of fun.</p>
+<h2>How to use your Raspberry Pi as a wireless access point</h2>
+<p>We’re going to get into the command line a bit here, but this project isn’t really all that difficult. All we’re really doing is using Raspbian and installing a couple packages that give the Pi the ability to do router-like things like assign IP addresses to devices that connect to it.</p>
+<h3>Step 1: Install and update Raspbian</h3>
+<p><a href="https://thepi.io/how-to-install-raspbian-on-the-raspberry-pi/">Check out our complete guide to installing Raspbian for the details on this one.</a> Then plug everything in and hop into the terminal and check for updates and ugrades:</p>
+<pre>sudo apt-get update
+sudo apt-get upgrade</pre>
+<p>If you get an upgrade, It’s a good idea to reboot with&nbsp;<strong>sudo reboot</strong>.</p>
+<h3>Step 2: Install hostapd and dnsmasq</h3>
+<p>These are the two programs we’re going to use to make your Raspberry Pi into a wireless access point. To get them, just type these lines into the terminal:</p>
+<pre>sudo apt-get install hostapd
+sudo apt-get install dnsmasq</pre>
+<p>Both times, you’ll have to hit y to continue. hostapd is the package that lets us create a wireless hotspot using a Raspberry Pi, and dnsmasq is an easy-to-use DHCP and DNS server.</p>
+<p>We’re going to edit the programs’ configuration files in a moment, so let’s turn the programs off<br>
+before we start tinkering:</p>
+<pre>sudo systemctl stop hostapd
+sudo systemctl stop dnsmasq
+</pre>
+<h3>Step 3: Configure a static IP for the wlan0 interface</h3>
+<p>For our purposes here, I’m assuming that we’re using the standard home network IP addresses, like 192.168.###.###. Given that assumption, let’s assign the IP address <strong>192.168.0.10</strong> to the wlan0<br>
+interface by editing the dhcpcd configuration file. Start editing with this command:</p>
+<pre>sudo nano /etc/dhcpcd.conf</pre>
+<p>Now that you’re in the file, add the following lines at the end:</p>
+<pre>interface wlan0
+static ip_address=192.168.0.10/24
+denyinterfaces eth0
+denyinterfaces wlan0</pre>
+<p>(The last two lines are needed in order to make our bridge work –- but more on that in<br>
+Step 8.)</p>
+<p>After that, press <strong>Ctrl+X</strong>, then<strong> Y</strong>, then<strong> Enter</strong> to save the file and exit the editor.</p>
+<h3>Step 4: Configure the DHCP server (dnsmasq)</h3>
+<p>We’re going to use dnsmasq as our DHCP server. The idea of a DHCP server is to<br>
+dynamically distribute network configuration parameters, such as IP addresses, for<br>
+interfaces and services.</p>
+<p>dnsmasq’s default configuration file contains a lot of unnecessary information, so<br>
+it’s easier for us to start from scratch. Let’s rename the default configuration file and<br>
+write a new one:</p>
+<pre>sudo mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig
+sudo nano /etc/dnsmasq.conf</pre>
+<p>You’ll be editing a new file now, and with the old one renamed, this is the config file that dnsmasq will use. Type these lines into your new configuration file:</p>
+<pre>interface=wlan0
+  dhcp-range=192.168.0.11,192.168.0.30,255.255.255.0,24h</pre>
+<p>The lines we added mean that we’re going to provide IP addresses between 192.168.0.11 and 192.168.0.30 for the wlan0 interface.</p>
+<h3>Step 5: Configure the access point host software (hostapd)</h3>
+<p>Another config file! This time, we’re messing with the hostapd config file. Open ‘er up:</p>
+<pre>sudo nano /etc/hostapd/hostapd.conf</pre>
+<p>This should create a brand new file. Type in this:</p>
+<pre>interface=wlan0
+bridge=br0
+hw_mode=g
+channel=7
+wmm_enabled=0
+macaddr_acl=0
+auth_algs=1
+ignore_broadcast_ssid=0
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=TKIP
+rsn_pairwise=CCMP
+ssid=<strong>NETWORK</strong>
+wpa_passphrase=<strong>PASSWORD</strong></pre>
+<p>Note that where I have “NETWORK” and “PASSWORD,” you should come up with your own names. This is how you’ll join the Pi’s network from other devices.</p>
+<p>We still have to show the system the location of the configuration file:</p>
+<pre>sudo nano /etc/default/hostapd</pre>
+<p>In this file, track down the line that says&nbsp;#DAEMON_CONF=”” – delete that <strong>#</strong> and put the path to our config file in the quotes, so that it looks like this:</p>
+<pre>DAEMON_CONF="/etc/hostapd/hostapd.conf"</pre>
+<p>The # keeps the line from being read as code, so you’re basically bringing this line to life here while giving it the right path to our config file.</p>
+<h3>Step 6: Set up traffic forwarding</h3>
+<p>The idea here is that when you connect to your Pi, it will forward the traffic over your Ethernet cable. So we’re going to have wlan0 forward via Ethernet cable to your modem. This involves editing yet another config file:</p>
+<pre>sudo nano /etc/sysctl.conf</pre>
+<p>Now find this line:</p>
+<pre>#net.ipv4.ip_forward=1</pre>
+<p>…and delete the “#” – leaving the rest, so it just reads:</p>
+<pre>net.ipv4.ip_forward=1</pre>
+<h3>Step 7: Add a new iptables rule</h3>
+<p>Next, we’re going to add IP masquerading for outbound traffic on eth0 using iptables:</p>
+<pre>sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE</pre>
+<p>…and save the new iptables rule:</p>
+<pre>sudo sh -c "iptables-save &gt; /etc/iptables.ipv4.nat"</pre>
+<p>To load the rule on boot, we need to edit the file /etc/rc.local and add the following<br>
+line just above the line exit 0:</p>
+<pre>iptables-restore &lt; /etc/iptables.ipv4.nat</pre>
+<h3>Step 8: Enable internet connection</h3>
+<p>Now the Raspberry Pi is acting as an access point to which other devices can connect. However, those devices can’t use the Pi to access the internet just yet. To make the possible, we need to build a bridge that will pass all traffic between the wlan0 and eth0 interfaces.</p>
+<p>To build the bridge, let’s install one more package:</p>
+<pre>sudo apt-get install bridge-utils</pre>
+<p>We’re ready to add a new bridge (called br0):</p>
+<pre>sudo brctl addbr br0</pre>
+<p>Next, we’ll connect the eth0 interface to our bridge:</p>
+<pre>sudo brctl addif br0 eth0</pre>
+<p>Finally, let’s edit the interfaces file:</p>
+<pre>sudo nano /etc/network/interfaces</pre>
+<p>…and add the following lines at the end of the file:</p>
+<pre>auto br0
+iface br0 inet manual
+bridge_ports eth0 wlan0</pre>
+<h3>Step 9: Reboot</h3>
+<p>Now that we’re ready, let’s reboot with <strong>sudo reboot.</strong></p>
+<p>Now your Pi should be working as a wireless access point. Try it out by hopping on another device and looking for the network name you used back in step 5.</p>
+<p>&nbsp;</p>
+<p><em>This piece has been updated for Raspbian Stretch and is based on <a href="https://github.com/SurferTim/documentation/blob/6bc583965254fa292a470990c40b145f553f6b34/configuration/wireless/access-point.md" target="_blank" rel="noopener">the instructions created by GitHub user SurferTim</a>.</em></p>
+	</div>
+	</article><div class="mh-share-buttons mh-group">
+    <a class="mh-col mh-1-4 mh-facebook" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#" onclick="window.open(&#39;http://www.facebook.com/sharer.php?u=https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/&amp;t=How to use your Raspberry Pi as a wireless access point&#39;, &#39;facebookShare&#39;, &#39;width=626,height=436&#39;); return false;" title="Share on Facebook">
+	    <span class="mh-share-button"><i class="fa fa-facebook fa-2x"></i>SHARE</span>
+	</a>
+    <a class="mh-col mh-1-4 mh-twitter" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#" onclick="window.open(&#39;http://twitter.com/share?text=How to use your Raspberry Pi as a wireless access point -&amp;url=https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/&#39;, &#39;twitterShare&#39;, &#39;width=626,height=436&#39;); return false;" title="Tweet This Post">
+	    <span class="mh-share-button"><i class="fa fa-twitter fa-2x"></i>TWEET</span>
+	</a>
+    <a class="mh-col mh-1-4 mh-pinterest" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#" onclick="window.open(&#39;http://pinterest.com/pin/create/button/?url=https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/&amp;media=https://thepi.io/wp-content/uploads/2017/03/raspberry-pi-logo.png&amp;description=How to use your Raspberry Pi as a wireless access point&#39;, &#39;pinterestShare&#39;, &#39;width=750,height=350&#39;); return false;" title="Pin This Post">
+	    <span class="mh-share-button"><i class="fa fa-pinterest fa-2x"></i>PIN</span>
+	</a>
+    <a class="mh-col mh-1-4 mh-googleplus" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#" onclick="window.open(&#39;https://plusone.google.com/_/+1/confirm?hl=en-US&amp;url=https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/&#39;, &#39;googleShare&#39;, &#39;width=626,height=436&#39;); return false;" title="Share on Google+" target="_blank">
+	    <span class="mh-share-button"><i class="fa fa-google-plus fa-2x"></i>SHARE</span>
+	</a>
+</div><nav class="post-nav-wrap" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+<ul class="post-nav clearfix">
+<li class="post-nav-prev">
+<a href="https://thepi.io/how-to-use-your-raspberry-pi-to-monitor-broadband-speed/" rel="prev"><i class="fa fa-chevron-left"></i>Previous post</a></li>
+<li class="post-nav-next">
+<a href="https://thepi.io/how-to-use-dietpi-on-the-raspberry-pi/" rel="next">Next post<i class="fa fa-chevron-right"></i></a></li>
+</ul>
+</nav>
+		<div class="comments-wrap">
+			<h4 class="comment-section-title">
+				<span class="comment-count">53 Comments</span> <span class="comment-count-more">on "How to use your Raspberry Pi as a wireless access point"</span>			</h4>
+			<ol class="commentlist">
+						<li class="comment even thread-even depth-1" id="li-comment-189">
+			<div id="comment-189">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/5cf16e91364713cd798367bf138fc349.png" srcset="https://secure.gravatar.com/avatar/5cf16e91364713cd798367bf138fc349?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">flasterofreality</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-189">July 9, 2017 at 3:51 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-189" onclick="return addComment.moveForm( &quot;comment-189&quot;, &quot;189&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to flasterofreality">Reply</a>														</div>
+								<div class="comment-text">
+					<p>This is one of the best tutorials I have seen for the Pi3 with using onboard Wi-Fi! Thanks for including the /etc/rc.local config for iptables that often gets overlooked.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-218">
+			<div id="comment-218">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/56b573a285352a34912292ccd64a5aa8.png" srcset="https://secure.gravatar.com/avatar/56b573a285352a34912292ccd64a5aa8?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Evan</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-218">July 20, 2017 at 11:58 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-218" onclick="return addComment.moveForm( &quot;comment-218&quot;, &quot;218&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Evan">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Thanks for this, it works better than several other tutorials I’ve tried.</p>
+<p>But, what I’m really looking for is not a hotspot with its own IP range, but an extension of my existing Ethernet network with DHCP done on the main router. So that all devices can see each other. Do you have any ideas about how to accomplish that? There is a guide on the Raspberry Pi website, which uses bridge, but it doesn’t work.</p>
+				</div>
+			</div><ul class="children">
+		<li class="comment even depth-2" id="li-comment-1019">
+			<div id="comment-1019">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/c027cd78387d58564fd51596deeb9d9e.jpeg" srcset="https://secure.gravatar.com/avatar/c027cd78387d58564fd51596deeb9d9e?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Anders J</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1019">December 10, 2017 at 3:45 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1019" onclick="return addComment.moveForm( &quot;comment-1019&quot;, &quot;1019&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Anders J">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Try to remove all configurations of dnsmasq and dhcp. Uninstall dnsmasq.<br>
+Then remove the firewall settings, as it starts masquerading, that is, make the RPi and other LAN on different IP ranges with NAT. You don’t want that.</p>
+<p>Set the RPi to get IP address from dhcp or static IP from the other networks network address. I would try dhcp first.</p>
+<p>Good luck!</p>
+<p>The rest should be enough to make it work after reboot.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-923">
+			<div id="comment-923">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/1eeded3584515da795969bfb6da506ae.png" srcset="https://secure.gravatar.com/avatar/1eeded3584515da795969bfb6da506ae?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Riley20019</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-923">November 25, 2017 at 8:10 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-923" onclick="return addComment.moveForm( &quot;comment-923&quot;, &quot;923&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Riley20019">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Can anyone help me, I have it all working but when i try to connect it says that there is no internet connection and it will not fully connect it will load forever. Do I have to port-forward the Raspberry Pi on my router or is it something i have to fix in the code?</p>
+				</div>
+			</div><ul class="children">
+		<li class="comment even depth-2" id="li-comment-1018">
+			<div id="comment-1018">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/c027cd78387d58564fd51596deeb9d9e.jpeg" srcset="https://secure.gravatar.com/avatar/c027cd78387d58564fd51596deeb9d9e?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Anders J</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1018">December 10, 2017 at 3:39 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1018" onclick="return addComment.moveForm( &quot;comment-1018&quot;, &quot;1018&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Anders J">Reply</a>														</div>
+								<div class="comment-text">
+					<p>What is the network address of the network you connect to eth0? If it is 192.168.0.0/24 (that is the IP address prefix is 192.168.0.) you should change the prefixes on your configuration on the RPi to something else like 192.168.42 or something. The number 42 could be anything between 1 and 255.</p>
+<p>So, we need to see what router you uses.</p>
+<p>Try the command ‘ip route’ on the RPi.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-989">
+			<div id="comment-989">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/c9d199b005ce1fa28d1d091207d3a688.jpeg" srcset="https://secure.gravatar.com/avatar/c9d199b005ce1fa28d1d091207d3a688?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Corey</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-989">December 3, 2017 at 12:19 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-989" onclick="return addComment.moveForm( &quot;comment-989&quot;, &quot;989&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Corey">Reply</a>														</div>
+								<div class="comment-text">
+					<p>So I followed SurferTims tutorial and pretty much ended up doing what you’ve got here except with different IPs — do you know how to add a captive portal to this AP so it points to an Apache web server on the Raspberry Pi?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-991">
+			<div id="comment-991">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/e7cfc0aeb8adeebbaae8080032c48cb0.png" srcset="https://secure.gravatar.com/avatar/e7cfc0aeb8adeebbaae8080032c48cb0?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Phil</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-991">December 3, 2017 at 11:17 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-991" onclick="return addComment.moveForm( &quot;comment-991&quot;, &quot;991&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Phil">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Really good, worked well, with VNC its a simple cut and paste</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1002">
+			<div id="comment-1002">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/9a232ca9e879b8cf57d8158dcc1f211f.png" srcset="https://secure.gravatar.com/avatar/9a232ca9e879b8cf57d8158dcc1f211f?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Deki</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1002">December 5, 2017 at 4:56 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1002" onclick="return addComment.moveForm( &quot;comment-1002&quot;, &quot;1002&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Deki">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Hello and thank you for the tutorial. It’s the only one working since updating to Stretch… <img draggable="false" class="emoji" alt="🙂" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/1f642.svg"></p>
+<p>Now that I’ve replicated the tutorial, I’d like to implement a slightly different version of it. I’d like to use the Raspberry Pi 3 as an access point AND as a client simultaneously. This is for a little project I’m working on (building a weather station). This should be possible with the Wi-Fi chipset built into the Raspi. There is no need for the clients that access the Raspi AP to have internet connectivity, so there’s no need for forwarding traffic (only the Raspi needs internet connectivity). I’m rather new to networking on Linux, so I don’t bring much experience to the table. Unfortunately, there is no other way than this to realize the project. Can this be done by simply altering some of the above steps? What would be the right way of doing so? If not, could anyone give me some pointers to it?</p>
+<p>I have found some tutorials for doing so, but all of them work with /etc/network/interfaces. Unfortunately, editing anything in this file breaks access to wireless connectivity… (“no wireless interface found”)</p>
+<p>Hopefully someone can help me. Thanks in advance!</p>
+<p>Kind regards,<br>
+Deki</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-1005">
+			<div id="comment-1005">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/80ceeab75267576a0368d34becf8668d.png" srcset="https://secure.gravatar.com/avatar/80ceeab75267576a0368d34becf8668d?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Viktor</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1005">December 6, 2017 at 10:04 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1005" onclick="return addComment.moveForm( &quot;comment-1005&quot;, &quot;1005&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Viktor">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Could you please say why it is losing connection in 30 sec after start? (I can’t see SSID in Wi-Fi list and no connection between the RPi and my phone.)</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1014">
+			<div id="comment-1014">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/80ceeab75267576a0368d34becf8668d.png" srcset="https://secure.gravatar.com/avatar/80ceeab75267576a0368d34becf8668d?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Viktor</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1014">December 8, 2017 at 11:13 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1014" onclick="return addComment.moveForm( &quot;comment-1014&quot;, &quot;1014&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Viktor">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Unfortunately I did exactly as described (twice) and I can’t connect to the Raspberry Pi.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-1015">
+			<div id="comment-1015">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/80ceeab75267576a0368d34becf8668d.png" srcset="https://secure.gravatar.com/avatar/80ceeab75267576a0368d34becf8668d?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Viktor</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1015">December 9, 2017 at 1:18 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1015" onclick="return addComment.moveForm( &quot;comment-1015&quot;, &quot;1015&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Viktor">Reply</a>														</div>
+								<div class="comment-text">
+					<p>I tried use it on another Raspberry Pi – the same problem.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1017">
+			<div id="comment-1017">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/c027cd78387d58564fd51596deeb9d9e.jpeg" srcset="https://secure.gravatar.com/avatar/c027cd78387d58564fd51596deeb9d9e?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Anders J</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1017">December 10, 2017 at 3:34 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1017" onclick="return addComment.moveForm( &quot;comment-1017&quot;, &quot;1017&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Anders J">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Great tutorial. But some things.</p>
+<p>Don’t use 192.168.0.0/24 or 192.168.1.0/24, as they are usually used in default configuration on home routers. Use a random number x in range 2-255 in 192.168.x.0/24 for your network. Then the risk of trouble with routing will be less. Even if you have MASQUERADE on.</p>
+<p>The firewall rules should also be set up, as NAT is not a secure firewall.</p>
+<p>I recommend using ufw there, with a new enough version also do support being a router.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-1022">
+			<div id="comment-1022">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/561ff47784b7c75d23008325f9b72423.png" srcset="https://secure.gravatar.com/avatar/561ff47784b7c75d23008325f9b72423?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Ro</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1022">December 10, 2017 at 4:41 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1022" onclick="return addComment.moveForm( &quot;comment-1022&quot;, &quot;1022&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Ro">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Thanks for this guide!</p>
+<p>All other solutions I tried sometimes Wi-Fi is not available any more and i have to reboot the RPi.</p>
+<p>Is there a way for this setup to check if it’s up and running and (automatic) take steps needed to get it up and running again?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1026">
+			<div id="comment-1026">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/3351697ba177ed8ed03d3882805653f3.png" srcset="https://secure.gravatar.com/avatar/3351697ba177ed8ed03d3882805653f3?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">MeInterwebs</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1026">December 12, 2017 at 12:50 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1026" onclick="return addComment.moveForm( &quot;comment-1026&quot;, &quot;1026&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to MeInterwebs">Reply</a>														</div>
+								<div class="comment-text">
+					<p>It would be helpful to see what the resulting ifconfig and route output looks like with some explanation, so that we could confirm that we did everything right and could make adjustments for our own specific situation with a deeper understanding. Thanks.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-1069">
+			<div id="comment-1069">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/9fc41246c57385818d373af8728e6498.png" srcset="https://secure.gravatar.com/avatar/9fc41246c57385818d373af8728e6498?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Jouni</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1069">December 17, 2017 at 2:46 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1069" onclick="return addComment.moveForm( &quot;comment-1069&quot;, &quot;1069&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Jouni">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Million thanks to you! I’ve been trying to setup wireless Pi AP for two days now, and this tutorial finally did it! What other tutorials around the web didn’t have was the bridge part, and they left you with access point sure but without any connection to the net.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1156">
+			<div id="comment-1156">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/227b5645e8c558abe23ca38852483a5a.png" srcset="https://secure.gravatar.com/avatar/227b5645e8c558abe23ca38852483a5a?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Agustin Lobo</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1156">December 22, 2017 at 5:31 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1156" onclick="return addComment.moveForm( &quot;comment-1156&quot;, &quot;1156&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Agustin Lobo">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Is it possible to use this approach to use an Android device as a remote desktop of the RPi (using VNC) when there is no network (i.e., in the field)? Thanks.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-1168">
+			<div id="comment-1168">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/d1465be609ea6e658e9261d2635a6dbd.png" srcset="https://secure.gravatar.com/avatar/d1465be609ea6e658e9261d2635a6dbd?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Eid Elagha</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1168">December 23, 2017 at 8:01 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1168" onclick="return addComment.moveForm( &quot;comment-1168&quot;, &quot;1168&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Eid Elagha">Reply</a>														</div>
+								<div class="comment-text">
+					<p>when I used the command:<br>
+sudo brctl addif br0 eth0</p>
+<p>It shown an error: Can’t add wlan0 to bridge br0: Operation not supported</p>
+<p>Please help to fix this error!</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1249">
+			<div id="comment-1249">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/f32d5fed1450e57644c591ca4768a43b.jpeg" srcset="https://secure.gravatar.com/avatar/f32d5fed1450e57644c591ca4768a43b?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn"><a href="http://dhakastudio.com/" rel="external nofollow" class="url">Shamir Shakir</a></span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1249">December 26, 2017 at 7:04 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1249" onclick="return addComment.moveForm( &quot;comment-1249&quot;, &quot;1249&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Shamir Shakir">Reply</a>														</div>
+								<div class="comment-text">
+					<p>I found out that Pi is not connecting to router AP (as client). I tried connecting manually using GUI, but not working.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-1252">
+			<div id="comment-1252">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/227b5645e8c558abe23ca38852483a5a.png" srcset="https://secure.gravatar.com/avatar/227b5645e8c558abe23ca38852483a5a?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Agustin Lobo</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1252">December 27, 2017 at 12:48 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1252" onclick="return addComment.moveForm( &quot;comment-1252&quot;, &quot;1252&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Agustin Lobo">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Thanks for the guide.</p>
+<p>I think that, in case you are not interested on Step 8 (i.e., you just want to access your Raspberry Pi through SSH or VNC even in the absence of Wi-Fi network), you also have to avoid the two lines with denyinterfaces in /etc/dhcpcd.conf (Step 3). At least this is how it works for me. Please confirm.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1264">
+			<div id="comment-1264">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/451487770967aa45d4c061329ba408c7.png" srcset="https://secure.gravatar.com/avatar/451487770967aa45d4c061329ba408c7?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn"><a href="http://web.ncf.ca/fx829" rel="external nofollow" class="url">David Whiteley</a></span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1264">December 28, 2017 at 2:28 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1264" onclick="return addComment.moveForm( &quot;comment-1264&quot;, &quot;1264&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to David Whiteley">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Many thanks for this AP, I’ve been working on it for about two months.</p>
+<p>My application is remote temperature monitoring of bee hives.</p>
+<p>My set-up is AP–Pi-Zero-W–USB/Ethernet–Home Router(Wi-Fi disabled)–Debian PC along with Wi-Fi devices Win7Lap Top and Galaxy/Android<br>
+AP static IP 192.168.168.10, range …11 to …30.</p>
+<p>The Android/Firefox goes online through the AP just fine.</p>
+<p>Android/Fing and Win7/Control Panel list Gateway as 198.168.0.1, i.e., the home router, not the Pi AP at 192.168.168.10.</p>
+<p>Win7/Firefox not happy.</p>
+<p>On Android/Termius/BotSync/etc attempts to reach the Pi at 192.168.168.10 are thwarted.</p>
+<p>What might I try to log on to the Pi? From Android for Terminal/rsync, etc.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-1273">
+			<div id="comment-1273">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/65c4b1a45205f07211b77d6942512cda.png" srcset="https://secure.gravatar.com/avatar/65c4b1a45205f07211b77d6942512cda?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Kirk</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1273">December 29, 2017 at 7:10 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1273" onclick="return addComment.moveForm( &quot;comment-1273&quot;, &quot;1273&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Kirk">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Thanks for the how-to on this. I’m looking to turn my Pi into a VPN, and got to this tutorial from the VPN post.</p>
+<p>After going through these instructions, I’m not seeing a broadcast of my Pi’s network. When I reboot, the Wi-Fi connects automatically to the last hotspot, but I’ve tried turning that off as well with no luck.  </p>
+<p>Am I missing anything? Thanks for any insight.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1308">
+			<div id="comment-1308">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/bc1b753d9e7ffa8a00995c22cb82b3ad.png" srcset="https://secure.gravatar.com/avatar/bc1b753d9e7ffa8a00995c22cb82b3ad?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">midori</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1308">January 3, 2018 at 10:44 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1308" onclick="return addComment.moveForm( &quot;comment-1308&quot;, &quot;1308&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to midori">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Hi, I use SSH on Ethernet port. It seems that br0 already exists. How can I create a wireless access point without touching Ethernet port?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-1317">
+			<div id="comment-1317">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/48e86d0d9e0c6060313272303564ec05.jpeg" srcset="https://secure.gravatar.com/avatar/48e86d0d9e0c6060313272303564ec05?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Ernesto Galdamez</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1317">January 4, 2018 at 6:53 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1317" onclick="return addComment.moveForm( &quot;comment-1317&quot;, &quot;1317&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Ernesto Galdamez">Reply</a>														</div>
+								<div class="comment-text">
+					<p>I tried another tutorial to make this work, but this solved my issue with no internet connection. The other tutorial forgot about the bridge connection with eth0. Thanks in advance for so helpful information! I’m trying to setup my RPi3 as a captive portal and needed this.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1322">
+			<div id="comment-1322">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/dc4a4066bed864d5ebe35142e406ff39.png" srcset="https://secure.gravatar.com/avatar/dc4a4066bed864d5ebe35142e406ff39?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Chris</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1322">January 5, 2018 at 3:28 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1322" onclick="return addComment.moveForm( &quot;comment-1322&quot;, &quot;1322&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Chris">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Thanks for this how-to. I got it up and working.  I’ve had it working for about a few weeks now, but for some reason the Wi-Fi seems to drop of disconnect after 30-45 minutes. If I’m connected via Wi-Fi, it drops. Logging into it via keyboard/monitor, I can’t go anywhere. It’s like the entire network just dies.  </p>
+<p>Any suggestions on how to re-cycle the connections or adapters?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-1349">
+			<div id="comment-1349">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/0ea3549910f6eb6017250086d60c1580.png" srcset="https://secure.gravatar.com/avatar/0ea3549910f6eb6017250086d60c1580?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Peter Barsznica</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1349">January 9, 2018 at 4:43 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1349" onclick="return addComment.moveForm( &quot;comment-1349&quot;, &quot;1349&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Peter Barsznica">Reply</a>														</div>
+								<div class="comment-text">
+					<p>ALL worked first go! Thanks heaps!</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1378">
+			<div id="comment-1378">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/fb495e32da722cdf4c784942e3a3b811.png" srcset="https://secure.gravatar.com/avatar/fb495e32da722cdf4c784942e3a3b811?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Tyron Hawkins</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1378">January 12, 2018 at 4:09 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1378" onclick="return addComment.moveForm( &quot;comment-1378&quot;, &quot;1378&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Tyron Hawkins">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Is this running well?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-1411">
+			<div id="comment-1411">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/0422ad130b6572397f45085a64ee39b6.png" srcset="https://secure.gravatar.com/avatar/0422ad130b6572397f45085a64ee39b6?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Gab</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1411">January 18, 2018 at 5:55 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1411" onclick="return addComment.moveForm( &quot;comment-1411&quot;, &quot;1411&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Gab">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Well… I tried twice and nothing is working. <img draggable="false" class="emoji" alt="🙁" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/1f641.svg"> Should the Wi-Fi magically appear when rebooting?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1441">
+			<div id="comment-1441">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/f4ca26fdfd35287c30cdb33809bbe67a.png" srcset="https://secure.gravatar.com/avatar/f4ca26fdfd35287c30cdb33809bbe67a?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">dp_0b</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1441">January 24, 2018 at 8:51 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1441" onclick="return addComment.moveForm( &quot;comment-1441&quot;, &quot;1441&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to dp_0b">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Same here ^</p>
+<p>Does the Wi-Fi adapter need to remain in managed mode?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-1501">
+			<div id="comment-1501">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/608c851387f78a928c908a814bc193cd.png" srcset="https://secure.gravatar.com/avatar/608c851387f78a928c908a814bc193cd?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Tom</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1501">January 28, 2018 at 2:24 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1501" onclick="return addComment.moveForm( &quot;comment-1501&quot;, &quot;1501&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Tom">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Bridge isn’t working. When I put in command “sudo brctl addif br0 eth0” it says “interface eth0 does not exist.” Can anyone help?</p>
+				</div>
+			</div><ul class="children">
+		<li class="comment odd alt depth-2" id="li-comment-4177">
+			<div id="comment-4177">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/54e96218adb3092c458c05e708d2d226.png" srcset="https://secure.gravatar.com/avatar/54e96218adb3092c458c05e708d2d226?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">eric</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-4177">May 28, 2018 at 12:44 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-4177" onclick="return addComment.moveForm( &quot;comment-4177&quot;, &quot;4177&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to eric">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Me too, but I don’t have a solution unfortunately.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-1503">
+			<div id="comment-1503">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/608c851387f78a928c908a814bc193cd.png" srcset="https://secure.gravatar.com/avatar/608c851387f78a928c908a814bc193cd?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Tom</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1503">January 28, 2018 at 3:30 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1503" onclick="return addComment.moveForm( &quot;comment-1503&quot;, &quot;1503&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Tom">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Does you Pi need to be connected to a router over Ethernet?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-1515">
+			<div id="comment-1515">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/f2063272d5ddb05eb2cb394f7851505e.png" srcset="https://secure.gravatar.com/avatar/f2063272d5ddb05eb2cb394f7851505e?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Inlimbo</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1515">January 30, 2018 at 12:02 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1515" onclick="return addComment.moveForm( &quot;comment-1515&quot;, &quot;1515&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Inlimbo">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Hi,</p>
+<p>First of all, thank you so much for this tutorial!! I tried several others and this is the only one that truly and easily worked!<br>
+I’m having a little problem though. Other devices (like my smart TV for instance) can actually connect to my Raspberry, but when I use OpenVPN to connect my Raspberry to a NordVPN server, these devices don’t take advantage of the VPN. I thought that when the Raspberry is using OpenVPN, any device that connects to it would connect to the VPN as well but it doesn’t seem to be as simple as that and I missing something here. Do you have any advice or tip to help me finish my little project? Thank you!</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-1578">
+			<div id="comment-1578">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/2ae7dd4df20402667a40e99947cc0bdf.png" srcset="https://secure.gravatar.com/avatar/2ae7dd4df20402667a40e99947cc0bdf?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Emmanuel Z.</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1578">February 2, 2018 at 11:20 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-1578" onclick="return addComment.moveForm( &quot;comment-1578&quot;, &quot;1578&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Emmanuel Z.">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Thanks for the tutorial, it works perfectly!</p>
+<p>One question though: I have a local server running on port 9123. How could I bridge all traffic except for this port?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-2153">
+			<div id="comment-2153">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/3e8a625d905fb9c7e760d1661c49d155.png" srcset="https://secure.gravatar.com/avatar/3e8a625d905fb9c7e760d1661c49d155?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn"><a href="http://www.pihomeserver.fr/" rel="external nofollow" class="url">Pi Home Server</a></span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2153">February 12, 2018 at 2:28 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2153" onclick="return addComment.moveForm( &quot;comment-2153&quot;, &quot;2153&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Pi Home Server">Reply</a>														</div>
+								<div class="comment-text">
+					<p>If you don’t see the Wi-Fi hostpot check that hostapd service is up and running. That’s the one exposing the SSID.</p>
+<p>For those wanting a all-in-one hotspot you can try this one: <a href="https://github.com/pihomeserver/Kupiki-Hotspot-Script" rel="nofollow">https://github.com/pihomeserver/Kupiki-Hotspot-Script</a></p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-2341">
+			<div id="comment-2341">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/50c26ff85f965ec18903204f36badecb.jpeg" srcset="https://secure.gravatar.com/avatar/50c26ff85f965ec18903204f36badecb?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">clement</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2341">February 20, 2018 at 4:45 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2341" onclick="return addComment.moveForm( &quot;comment-2341&quot;, &quot;2341&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to clement">Reply</a>														</div>
+								<div class="comment-text">
+					<p>It works however I’m still getting an IP from the main router range and not between 192.168.0.11-30.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-2446">
+			<div id="comment-2446">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/26b0c17acf2df3b5e793c341c42774f4.jpeg" srcset="https://secure.gravatar.com/avatar/26b0c17acf2df3b5e793c341c42774f4?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Steven Dz</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2446">February 28, 2018 at 8:24 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2446" onclick="return addComment.moveForm( &quot;comment-2446&quot;, &quot;2446&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Steven Dz">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Well done! </p>
+<p>Thank you for helping me get this working. Tried multiple others and was glad to find one that works with Stretch!</p>
+<p>If I could suggest a mod, it would be calling out the aspects that drive bridge mode vs. acting as a standalone AP/router.</p>
+<p>Ideally, I’m going for an AP that can also route traffic through the eth0 (if connected) but function independently if no Internet is available. After disabling the bridge/denyinterface parts, I’ve got the AP functioning in standalone mode, and the Pi can see the Internet, but Wi-Fi connected clients cannot. Getting closer!</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-2504">
+			<div id="comment-2504">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/e14b9c80a71193862b0628978b33bcb3.png" srcset="https://secure.gravatar.com/avatar/e14b9c80a71193862b0628978b33bcb3?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">ek</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2504">March 5, 2018 at 4:33 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2504" onclick="return addComment.moveForm( &quot;comment-2504&quot;, &quot;2504&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to ek">Reply</a>														</div>
+								<div class="comment-text">
+					<p>I followed the tutorial and I can see the broadcast SSID, but when I am trying to connect to the Pi I can’t obtain an IP address.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-2563">
+			<div id="comment-2563">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/f2df406df36a856e16aa7f75b7185550.jpeg" srcset="https://secure.gravatar.com/avatar/f2df406df36a856e16aa7f75b7185550?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn"><a href="http://fouryears.eu/" rel="external nofollow" class="url">Konstantin</a></span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2563">March 10, 2018 at 12:37 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2563" onclick="return addComment.moveForm( &quot;comment-2563&quot;, &quot;2563&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Konstantin">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Adding a bridge after you configured DNS, DHCP and NAT masquerading seems to be incorrect. These are two distinct configurations, after all.</p>
+<p>If you bridge eth0 and wlan0 together, these essentially become parts of the same subnet with Pi being completely transparent. In this case the DNS/DHCP functionality should be coming from the Ethernet, and the whole dnsmasq and iptables business is not needed.</p>
+<p>If, instead, you configure the Pi as a router, it becomes a proper host inbetween two separate subnets (one for eth0 and one for wlan0). In this case you do need dnsmasq and the iptables routing, however you should not bridge eth0 and wlan0.</p>
+				</div>
+			</div><ul class="children">
+		<li class="comment even depth-2" id="li-comment-2748">
+			<div id="comment-2748">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/372636d5a8941edb25bc207e1aed5cf4.png" srcset="https://secure.gravatar.com/avatar/372636d5a8941edb25bc207e1aed5cf4?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Marko</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2748">March 31, 2018 at 6:10 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2748" onclick="return addComment.moveForm( &quot;comment-2748&quot;, &quot;2748&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Marko">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Hi Konstantin,</p>
+<p>I am having the same problem as Jeremy (see below). I actually figured out that there is something wrong when obtaining the IP address – it gets an IP address from the main router and not from the “raspberry-router”.</p>
+<p>You pointed that out in your comment. My question now: How do I have to change the settings so that the Raspberry actually becomes a router?</p>
+<p>Thanks in advance,<br>
+Marko</p>
+				</div>
+			</div></li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2616">
+			<div id="comment-2616">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/96469b5b2134c27db9368f412dd6cf2d.png" srcset="https://secure.gravatar.com/avatar/96469b5b2134c27db9368f412dd6cf2d?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn"><a href="http://vbamaniac.com/" rel="external nofollow" class="url">Johny</a></span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2616">March 18, 2018 at 6:09 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2616" onclick="return addComment.moveForm( &quot;comment-2616&quot;, &quot;2616&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Johny">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Hi,</p>
+<p>Everything works fine apart from one thing. I have no internet on Raspberry Pi, so I can’t even run sudo apt-get update. I did this to run a VPN. Can you tell me what happened?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-2618">
+			<div id="comment-2618">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/aeec47a065607eeecd29f254b54cce03.png" srcset="https://secure.gravatar.com/avatar/aeec47a065607eeecd29f254b54cce03?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn"><a href="http://www.une-maison-connectee.fr/" rel="external nofollow" class="url">Jeremy</a></span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2618">March 18, 2018 at 10:56 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2618" onclick="return addComment.moveForm( &quot;comment-2618&quot;, &quot;2618&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Jeremy">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Unfortunately, it doesn’t work for me. I have started from a fresh installation of Raspbian. When I join the Wi-Fi network, my device is given an IP address from the router behind the RPi3. When I manually configure the IP address within the range of the RPi3 DHCP server, it doesn’t work at all. Any advice?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2731">
+			<div id="comment-2731">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/ac0f90bfba52ce203b8dcc2adc859fc8.png" srcset="https://secure.gravatar.com/avatar/ac0f90bfba52ce203b8dcc2adc859fc8?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Chuck</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2731">March 29, 2018 at 7:09 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2731" onclick="return addComment.moveForm( &quot;comment-2731&quot;, &quot;2731&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Chuck">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Unable to get this to work on my 3B+.  When it tries to boot it hangs up in the bluetooth area.  If I wait a while it will finally boot but is locked up.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-2763">
+			<div id="comment-2763">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/a5f1d3be2117bda1349672e2be4bd8fc.png" srcset="https://secure.gravatar.com/avatar/a5f1d3be2117bda1349672e2be4bd8fc?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Daniel</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2763">April 1, 2018 at 4:53 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2763" onclick="return addComment.moveForm( &quot;comment-2763&quot;, &quot;2763&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Daniel">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Thanks for the tutorial. It “kind” of works. <img draggable="false" class="emoji" alt="🙂" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/1f642.svg"><br>
+I’m using usb0 instead of eth0 (USB tethering). My issue is actually that the local Pi doesn’t get internet access. Everything that connects to it gets bridged, but the AP itself is denied access to the usb0 network.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-2960">
+			<div id="comment-2960">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/c5af1635a3d1e599c59b5dabb1c19fba.png" srcset="https://secure.gravatar.com/avatar/c5af1635a3d1e599c59b5dabb1c19fba?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">John Beaven</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2960">April 8, 2018 at 8:26 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-2960" onclick="return addComment.moveForm( &quot;comment-2960&quot;, &quot;2960&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to John Beaven">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Hi,</p>
+<p>I had problems recently setting up the bridge on a B+ Pi where it stopped the Pi from booting with a “Kernel Oops” error.. Others have seen the same and raised this bug report (<a href="https://github.com/raspberrypi/linux/issues/2437" rel="nofollow">https://github.com/raspberrypi/linux/issues/2437</a>). Based on the comments in there I was able to update the firmware to resolve the issue (sudo raspi-config). This only seems to affect the B+ and not earlier models.</p>
+<p>It’s working great now!</p>
+<p>Regards,<br>
+John.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-3077">
+			<div id="comment-3077">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/e077d6a8f32b4c0c594b085a4673800e.png" srcset="https://secure.gravatar.com/avatar/e077d6a8f32b4c0c594b085a4673800e?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Choong Kar Yan</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3077">April 14, 2018 at 3:25 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3077" onclick="return addComment.moveForm( &quot;comment-3077&quot;, &quot;3077&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Choong Kar Yan">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Hi! Unfortunately, it doesn’t work on my RPi3. I can’t find the SSID broadcast name and don’t have any idea what is going on. Hope to get some help and guide, thank you!</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3135">
+			<div id="comment-3135">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/4179035e530c9d1f65a5460878d49faf.png" srcset="https://secure.gravatar.com/avatar/4179035e530c9d1f65a5460878d49faf?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">243637</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3135">April 19, 2018 at 5:36 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3135" onclick="return addComment.moveForm( &quot;comment-3135&quot;, &quot;3135&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to 243637">Reply</a>														</div>
+								<div class="comment-text">
+					<p>This worked for AP but it screwed up my SSH, xrdp and Pi-hole. Any ideas on how to fix that?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-3142">
+			<div id="comment-3142">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/c4f0d9b72568ddd50d8bfaf2f3708041.png" srcset="https://secure.gravatar.com/avatar/c4f0d9b72568ddd50d8bfaf2f3708041?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Fredrik</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3142">April 20, 2018 at 8:43 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3142" onclick="return addComment.moveForm( &quot;comment-3142&quot;, &quot;3142&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Fredrik">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Hi!</p>
+<p>I would like to use this or if there is some other approach already in place for a headless setup so that you can connect to the RPi with your phone and then set up your Wi-Fi connection. Instead of preconfiguring the WPA config through an SD card reader, similar to setting up ESPEasy.</p>
+<p>Any suggestions?</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3284">
+			<div id="comment-3284">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/c3f9577e820db966e06e11108d4ccfbc.jpeg" srcset="https://secure.gravatar.com/avatar/c3f9577e820db966e06e11108d4ccfbc?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Arlo</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3284">April 27, 2018 at 8:31 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3284" onclick="return addComment.moveForm( &quot;comment-3284&quot;, &quot;3284&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Arlo">Reply</a>														</div>
+								<div class="comment-text">
+					<p>This tutorial skips the step of running “iptables-restore &lt; /etc/iptables.ipv4.nat" manually.</p>
+<p>Every tutorial I've tried with Raspberry stretch has an issue with this step, so if you don't do it manually, it won't work and you'll have no error messages.</p>
+<p>This is the error (Raspberry Pi 3):</p>
+<p>"iptables-restore v1.6.0: iptables-restore: unable to initialize table 'nat'</p>
+<p>Error occurred at line: 2"</p>
+<p>Every similar process I've tried results in this error and I haven't been able to get past it.</p>
+<p>I don't know why some people have success and I haven't multiple times.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="li-comment-3295">
+			<div id="comment-3295">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/d4b3b9aee17a85f6bc878c68b3925db6.png" srcset="https://secure.gravatar.com/avatar/d4b3b9aee17a85f6bc878c68b3925db6?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Roger James</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3295">April 27, 2018 at 6:10 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3295" onclick="return addComment.moveForm( &quot;comment-3295&quot;, &quot;3295&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Roger James">Reply</a>														</div>
+								<div class="comment-text">
+					<p>The latest version of hostapd does not play well with wpa_supplicant on Stretch. The simplest way to to fix this is to disable wpa_supplicant on the wireless interfaces you want to run hostapd on. You can do this by adding the following line to to the relevant WLAN interface stanzas in /etc/dhcpcd.conf.</p>
+<p>nohook wpa_supplicant</p>
+<p>e.g.</p>
+<p>interface wlan0<br>
+nohook wpa_supplicant<br>
+static ip_address=192.168.0.1/24</p>
+<p>If you think about it it makes sense. Wpa_supplicant is a service to authenticate clients to access points. Hostapd is a service that runs the wireless interface as an access point that will receive authentication request from clients. Running both hostapd and wpa_supplicant on an interface does not make any sense and only worked by accident in the past.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-3477">
+			<div id="comment-3477">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/7122a4d8536bd3a6d4ab956b7010df4b.png" srcset="https://secure.gravatar.com/avatar/7122a4d8536bd3a6d4ab956b7010df4b?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">MXII</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3477">May 6, 2018 at 9:09 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3477" onclick="return addComment.moveForm( &quot;comment-3477&quot;, &quot;3477&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to MXII">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Succeeded in getting this to work on a Pi 3B+. However in order to do so I found Stretch Lite doesn’t name eth0 but uses a longer string of letters and numbers. “ifconfig” revealed this in place of eth0. </p>
+<p>I kept Step 7’s “sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE” but strangely in Step 8 I had to substitute eth0 with the new name shown by “ifconfig”.</p>
+				</div>
+			</div><ul class="children">
+		<li class="comment even depth-2" id="li-comment-4244">
+			<div id="comment-4244">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/3e8a625d905fb9c7e760d1661c49d155.png" srcset="https://secure.gravatar.com/avatar/3e8a625d905fb9c7e760d1661c49d155?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn"><a href="http://www.pihomeserver.fr/" rel="external nofollow" class="url">Pi Home Server</a></span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-4244">May 31, 2018 at 11:12 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-4244" onclick="return addComment.moveForm( &quot;comment-4244&quot;, &quot;4244&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Pi Home Server">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Add net.ifnames=0 at /boot/cmdline.txt and reboot and you will get back to eth0</p>
+<p>For those wanting a all-in-one hotspot you can try this one: <a href="https://github.com/pihomeserver/Kupiki-Hotspot-Script" rel="nofollow">https://github.com/pihomeserver/Kupiki-Hotspot-Script</a></p>
+				</div>
+			</div></li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="li-comment-3989">
+			<div id="comment-3989">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/2de52862811e7cad4714c8895afe3f3b.png" srcset="https://secure.gravatar.com/avatar/2de52862811e7cad4714c8895afe3f3b?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">David Hansen</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3989">May 23, 2018 at 6:18 am</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-3989" onclick="return addComment.moveForm( &quot;comment-3989&quot;, &quot;3989&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to David Hansen">Reply</a>														</div>
+								<div class="comment-text">
+					<p>I added the nohook wpa_supplicant line that was suggested by Roger James and that fixed my lack of internet on the Pi 3.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="li-comment-4126">
+			<div id="comment-4126">
+				<div class="vcard meta">
+					<img alt="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/4fbc66270a333bf9e5434672aca15002.png" srcset="https://secure.gravatar.com/avatar/4fbc66270a333bf9e5434672aca15002?s=140&amp;d=mm&amp;r=g 2x" class="avatar avatar-70 photo" height="70" width="70">					<span class="fn">Jhonathan</span> |
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-4126">May 25, 2018 at 6:33 pm</a> |
+											<a rel="nofollow" class="comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#comment-4126" onclick="return addComment.moveForm( &quot;comment-4126&quot;, &quot;4126&quot;, &quot;respond&quot;, &quot;211&quot; )" aria-label="Reply to Jhonathan">Reply</a>														</div>
+								<div class="comment-text">
+					<p>Did not work for me.</p>
+<p>I’ve tried it many times and with more than one Raspberry. And in any case the access point appears to my devices, I’m sure I did the correct procedures.</p>
+				</div>
+			</div></li><!-- #comment-## -->
+			</ol>
+		</div>		<div class="pagination comments-pagination">
+					</div>	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://thepi.io/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes">Your email address will not be published.</p><p class="comment-form-comment"><label for="comment">Comment</label><br><textarea autocomplete="nope" id="comment" name="6354cbcb82" cols="45" rows="5" aria-required="true"></textarea><textarea id="683e7ed2521b560bbb423db8a1adf7c0" aria-hidden="true" name="comment" autocomplete="nope" style="padding:0;clip:rect(1px, 1px, 1px, 1px);position:absolute !important;white-space:nowrap;height:1px;width:1px;overflow:hidden;" tabindex="-1"></textarea><script type="text/javascript">document.getElementById("comment").setAttribute( "id", "683e7ed2521b560bbb423db8a1adf7c0" );document.getElementById("6c1d691571").setAttribute( "id", "comment" );</script></p><p class="comment-form-author"><label for="author">Name </label><span class="required">*</span><br><input id="author" name="author" type="text" value="" size="30" aria-required="true"></p>
+<p class="comment-form-email"><label for="email">Email </label><span class="required">*</span><br><input id="email" name="email" type="text" value="" size="30" aria-required="true"></p>
+<p class="comment-form-url"><label for="url">Website</label><br><input id="url" name="url" type="text" value="" size="30"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="211" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>			</form>
+			</div><!-- #respond -->
+		</div>
+	<aside class="mh-sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+        <div id="custom_html-2" class="widget_text sb-widget clearfix widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align: center">
+<script async="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/f.txt"></script>
+<!-- Large Skyscraper Right -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-7234786419871369" data-ad-slot="4532969135"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div></div>		<div id="recent-posts-2" class="sb-widget clearfix widget_recent_entries">		<h4 class="widget-title"><span>Recent Posts</span></h4>		<ul>
+											<li>
+					<a href="https://thepi.io/how-to-use-dietpi-on-the-raspberry-pi/">How to use DietPi on the Raspberry Pi</a>
+									</li>
+											<li>
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-as-a-wireless-access-point/">How to use your Raspberry Pi as a wireless access point</a>
+									</li>
+											<li>
+					<a href="https://thepi.io/how-to-use-your-raspberry-pi-to-monitor-broadband-speed/">How to use your Raspberry Pi to monitor broadband speed</a>
+									</li>
+											<li>
+					<a href="https://thepi.io/how-to-run-raspberry-pi-desktop-on-windows-or-macos/">How to run Raspberry Pi Desktop on Windows or macOS</a>
+									</li>
+											<li>
+					<a href="https://thepi.io/how-to-back-up-your-raspberry-pi/">How to back up your Raspberry Pi</a>
+									</li>
+					</ul>
+		</div><div id="tag_cloud-2" class="sb-widget clearfix widget_tag_cloud"><h4 class="widget-title"><span>Topics</span></h4><div class="tagcloud"><a href="https://thepi.io/tag/chrome/" class="tag-cloud-link tag-link-4 tag-link-position-1" style="font-size: 8pt;" aria-label="Chrome (1 item)">Chrome</a>
+<a href="https://thepi.io/tag/chromium/" class="tag-cloud-link tag-link-5 tag-link-position-2" style="font-size: 12.581818181818pt;" aria-label="Chromium (2 items)">Chromium</a>
+<a href="https://thepi.io/tag/dosbox/" class="tag-cloud-link tag-link-35 tag-link-position-3" style="font-size: 8pt;" aria-label="DOSBox (1 item)">DOSBox</a>
+<a href="https://thepi.io/tag/eltechs/" class="tag-cloud-link tag-link-49 tag-link-position-4" style="font-size: 8pt;" aria-label="Eltechs (1 item)">Eltechs</a>
+<a href="https://thepi.io/tag/exagear/" class="tag-cloud-link tag-link-50 tag-link-position-5" style="font-size: 8pt;" aria-label="ExaGear (1 item)">ExaGear</a>
+<a href="https://thepi.io/tag/filezilla/" class="tag-cloud-link tag-link-17 tag-link-position-6" style="font-size: 8pt;" aria-label="FileZilla (1 item)">FileZilla</a>
+<a href="https://thepi.io/tag/ftp/" class="tag-cloud-link tag-link-9 tag-link-position-7" style="font-size: 8pt;" aria-label="FTP (1 item)">FTP</a>
+<a href="https://thepi.io/tag/games/" class="tag-cloud-link tag-link-36 tag-link-position-8" style="font-size: 12.581818181818pt;" aria-label="games (2 items)">games</a>
+<a href="https://thepi.io/tag/kodi/" class="tag-cloud-link tag-link-28 tag-link-position-9" style="font-size: 12.581818181818pt;" aria-label="Kodi (2 items)">Kodi</a>
+<a href="https://thepi.io/tag/lemp/" class="tag-cloud-link tag-link-45 tag-link-position-10" style="font-size: 8pt;" aria-label="LEMP (1 item)">LEMP</a>
+<a href="https://thepi.io/tag/mac-os-x/" class="tag-cloud-link tag-link-15 tag-link-position-11" style="font-size: 8pt;" aria-label="Mac OS X (1 item)">Mac OS X</a>
+<a href="https://thepi.io/tag/media-server/" class="tag-cloud-link tag-link-33 tag-link-position-12" style="font-size: 8pt;" aria-label="media server (1 item)">media server</a>
+<a href="https://thepi.io/tag/ms-dos/" class="tag-cloud-link tag-link-34 tag-link-position-13" style="font-size: 8pt;" aria-label="MS-DOS (1 item)">MS-DOS</a>
+<a href="https://thepi.io/tag/mysql/" class="tag-cloud-link tag-link-47 tag-link-position-14" style="font-size: 8pt;" aria-label="MySQL (1 item)">MySQL</a>
+<a href="https://thepi.io/tag/nas/" class="tag-cloud-link tag-link-43 tag-link-position-15" style="font-size: 8pt;" aria-label="NAS (1 item)">NAS</a>
+<a href="https://thepi.io/tag/netflix/" class="tag-cloud-link tag-link-3 tag-link-position-16" style="font-size: 8pt;" aria-label="Netflix (1 item)">Netflix</a>
+<a href="https://thepi.io/tag/nginx/" class="tag-cloud-link tag-link-46 tag-link-position-17" style="font-size: 8pt;" aria-label="nginx (1 item)">nginx</a>
+<a href="https://thepi.io/tag/noobs/" class="tag-cloud-link tag-link-24 tag-link-position-18" style="font-size: 8pt;" aria-label="NOOBS (1 item)">NOOBS</a>
+<a href="https://thepi.io/tag/openelec/" class="tag-cloud-link tag-link-30 tag-link-position-19" style="font-size: 8pt;" aria-label="OpenELEC (1 item)">OpenELEC</a>
+<a href="https://thepi.io/tag/openmediavault/" class="tag-cloud-link tag-link-44 tag-link-position-20" style="font-size: 8pt;" aria-label="OpenMediaVault (1 item)">OpenMediaVault</a>
+<a href="https://thepi.io/tag/openvpn/" class="tag-cloud-link tag-link-39 tag-link-position-21" style="font-size: 8pt;" aria-label="OpenVPN (1 item)">OpenVPN</a>
+<a href="https://thepi.io/tag/operating-systems/" class="tag-cloud-link tag-link-26 tag-link-position-22" style="font-size: 8pt;" aria-label="operating systems (1 item)">operating systems</a>
+<a href="https://thepi.io/tag/osmc/" class="tag-cloud-link tag-link-29 tag-link-position-23" style="font-size: 8pt;" aria-label="OSMC (1 item)">OSMC</a>
+<a href="https://thepi.io/tag/php/" class="tag-cloud-link tag-link-48 tag-link-position-24" style="font-size: 8pt;" aria-label="PHP (1 item)">PHP</a>
+<a href="https://thepi.io/tag/plex/" class="tag-cloud-link tag-link-32 tag-link-position-25" style="font-size: 8pt;" aria-label="Plex (1 item)">Plex</a>
+<a href="https://thepi.io/tag/port-forwarding/" class="tag-cloud-link tag-link-11 tag-link-position-26" style="font-size: 8pt;" aria-label="port forwarding (1 item)">port forwarding</a>
+<a href="https://thepi.io/tag/putty/" class="tag-cloud-link tag-link-14 tag-link-position-27" style="font-size: 8pt;" aria-label="PuTTY (1 item)">PuTTY</a>
+<a href="https://thepi.io/tag/raspbian/" class="tag-cloud-link tag-link-25 tag-link-position-28" style="font-size: 22pt;" aria-label="Raspbian (6 items)">Raspbian</a>
+<a href="https://thepi.io/tag/realvnc/" class="tag-cloud-link tag-link-22 tag-link-position-29" style="font-size: 8pt;" aria-label="RealVNC (1 item)">RealVNC</a>
+<a href="https://thepi.io/tag/remote-desktop-access/" class="tag-cloud-link tag-link-19 tag-link-position-30" style="font-size: 8pt;" aria-label="remote desktop access (1 item)">remote desktop access</a>
+<a href="https://thepi.io/tag/retropie/" class="tag-cloud-link tag-link-31 tag-link-position-31" style="font-size: 15.636363636364pt;" aria-label="RetroPie (3 items)">RetroPie</a>
+<a href="https://thepi.io/tag/router/" class="tag-cloud-link tag-link-37 tag-link-position-32" style="font-size: 8pt;" aria-label="router (1 item)">router</a>
+<a href="https://thepi.io/tag/sense-hat/" class="tag-cloud-link tag-link-65 tag-link-position-33" style="font-size: 18.181818181818pt;" aria-label="Sense HAT (4 items)">Sense HAT</a>
+<a href="https://thepi.io/tag/sftp/" class="tag-cloud-link tag-link-10 tag-link-position-34" style="font-size: 8pt;" aria-label="SFTP (1 item)">SFTP</a>
+<a href="https://thepi.io/tag/ssh/" class="tag-cloud-link tag-link-12 tag-link-position-35" style="font-size: 12.581818181818pt;" aria-label="SSH (2 items)">SSH</a>
+<a href="https://thepi.io/tag/vnc/" class="tag-cloud-link tag-link-18 tag-link-position-36" style="font-size: 8pt;" aria-label="VNC (1 item)">VNC</a>
+<a href="https://thepi.io/tag/vnc-connect/" class="tag-cloud-link tag-link-23 tag-link-position-37" style="font-size: 8pt;" aria-label="VNC Connect (1 item)">VNC Connect</a>
+<a href="https://thepi.io/tag/vnc-server/" class="tag-cloud-link tag-link-21 tag-link-position-38" style="font-size: 8pt;" aria-label="VNC Server (1 item)">VNC Server</a>
+<a href="https://thepi.io/tag/vnc-viewer/" class="tag-cloud-link tag-link-20 tag-link-position-39" style="font-size: 8pt;" aria-label="VNC Viewer (1 item)">VNC Viewer</a>
+<a href="https://thepi.io/tag/vpn/" class="tag-cloud-link tag-link-38 tag-link-position-40" style="font-size: 8pt;" aria-label="VPN (1 item)">VPN</a>
+<a href="https://thepi.io/tag/vyprvpn/" class="tag-cloud-link tag-link-40 tag-link-position-41" style="font-size: 8pt;" aria-label="VyprVPN (1 item)">VyprVPN</a>
+<a href="https://thepi.io/tag/wi-fi/" class="tag-cloud-link tag-link-41 tag-link-position-42" style="font-size: 8pt;" aria-label="Wi-Fi (1 item)">Wi-Fi</a>
+<a href="https://thepi.io/tag/widevine/" class="tag-cloud-link tag-link-6 tag-link-position-43" style="font-size: 8pt;" aria-label="Widevine (1 item)">Widevine</a>
+<a href="https://thepi.io/tag/windows/" class="tag-cloud-link tag-link-16 tag-link-position-44" style="font-size: 12.581818181818pt;" aria-label="Windows (2 items)">Windows</a>
+<a href="https://thepi.io/tag/wireless-access-point/" class="tag-cloud-link tag-link-42 tag-link-position-45" style="font-size: 8pt;" aria-label="wireless access point (1 item)">wireless access point</a></div>
+</div><div id="custom_html-3" class="widget_text sb-widget clearfix widget_custom_html"><div class="textwidget custom-html-widget"><div style="text-align: center">
+<script async="" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/f.txt"></script>
+<!-- The Pi - Medium Rectangle -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-7234786419871369" data-ad-slot="4306028674"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></div></div></aside>
+
+</div>
+</div>
+<footer class="mh-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+		<div class="wrapper-inner clearfix">
+			</div>
+	<div class="footer-bottom">
+		<div class="wrapper-inner clearfix">
+							<nav class="footer-nav clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+					<div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="https://thepi.io/privacy-policy/">Privacy Policy</a></li>
+</ul></div>				</nav>
+						<div class="copyright-wrap">
+				<p class="copyright">
+					© 2017 The Pi				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/thepi.io\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/scripts.js(1).download"></script>
+<script type="text/javascript" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/comment-reply.min.js.download"></script>
+<script type="text/javascript" src="./How to use your Raspberry Pi as a wireless access point - The Pi_files/wp-embed.min.js.download"></script>
+
+</body></html>
